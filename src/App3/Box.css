@@ -1,0 +1,16 @@
+div.box {
+  border: 2px solid gray;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  background-color: orange;
+}
+
+div.box div {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
