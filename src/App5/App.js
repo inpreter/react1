@@ -10,28 +10,18 @@ class App extends React.Component {
   }
 
   render() {
-    let b = this.state.list.map((o, index) => {
+    let boxes = this.state.list.map((o, index) => {
       return (
-        <div key={index} className={['box2', o ? 'on' : 'off'].join(' ')}>
-          {!o ? (
-            <button
-              className="btn btn-sm btn-primary"
-              onClick={this.handleBtnClick.bind(this, index)}
-            >
-              On
-            </button>
-          ) : (
-            <button
-              className="btn btn-sm btn-danger"
-              onClick={this.handleBtnClick.bind(this, index)}
-            >
-              Off
-            </button>
-          )}
+        <div
+          key={index}
+          className={['box2', o ? 'on' : 'off'].join(' ')}
+          onClick={this.handleBtnClick.bind(this, index)}
+        >
+          {index}
         </div>
       );
     });
-    return <div>{b}</div>;
+    return <div>{boxes}</div>;
   }
 
   handleBtnClick(index, e) {
