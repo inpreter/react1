@@ -6,6 +6,7 @@ import App4 from './App4/App';
 import App5 from './App5/App';
 import App6 from './App6/App';
 import App7 from './App7/App';
+import App8 from './App8/App';
 
 class MainApp extends React.Component {
   render() {
@@ -31,6 +32,9 @@ class MainApp extends React.Component {
             <li>
               <Link to="/app7">App7</Link>
             </li>
+            <li>
+              <Link to="/app8">App8</Link>
+            </li>
           </ul>
 
           <hr />
@@ -41,6 +45,7 @@ class MainApp extends React.Component {
           <Route path="/app5" component={App5} />
           <Route path="/app6" component={App6} />
           <Route path="/app7" component={App7} />
+          <Route path="/app8" component={App8} />
         </div>
       </Router>
     );
